@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "noEmitOnError": false,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "rootDir": "src",
+    "outDir": "dist",
+    "target": "es6",
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "types": [
+      "node",
+      "@webgpu/types"
+    ],
+    "module": "es2020",
+    "esModuleInterop": true,
+    "strict": false,
+    "sourceMap": true
+  },
+  "moduleResolution": "node",
+  "paths": {
+    "gl-matrix": ["node_modules/gl-matrix.min.js"]
+  },
+}
