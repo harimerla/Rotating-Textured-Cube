@@ -5,7 +5,7 @@
     "strictNullChecks": false,
     "rootDir": "src",
     "outDir": "dist",
-    "target": "es6",
+    "target": "es2017",
     "lib": [
       "esnext",
       "dom"
@@ -14,13 +14,19 @@
       "node",
       "@webgpu/types"
     ],
-    "module": "es2020",
+    "module": "commonjs",
+    //"module": "Node16",
     "esModuleInterop": true,
-    "strict": false,
+    "strict": true,
+    "preserveConstEnums": true,
     "sourceMap": true
   },
   "moduleResolution": "node",
   "paths": {
-    "gl-matrix": ["node_modules/gl-matrix.min.js"]
+    "gl-matrix": ["./node_modules/gl-matrix/gl-matrix-min.js"]
   },
+  "ts-node": {
+    // Do not forget to `npm i -D tsconfig-paths`
+    "require": ["tsconfig-paths/register"]
+},
 }

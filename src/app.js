@@ -303,7 +303,7 @@ import shaderCode from "./triangle.wgsl";
         //renderPass.setVertexBuffer(0, rhombusDataBuf);
         renderPass.setVertexBuffer(0, rectangleDataBuf);
         //renderPass.setVertexBuffer(1, dataBuf1);
-        renderPass.draw(6);
+        renderPass.draw(18);
         //renderPass.draw(3,1,0,0);
         //renderPass.draw(9);
         //renderPass.draw(3,1,0,0);
